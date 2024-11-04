@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>PlanCreationController</servlet-name>
+        <servlet-class>controller.PlanCreationController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlanDetailController</servlet-name>
+        <servlet-class>controller.PlanDetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WorkAssignmentController</servlet-name>
+        <servlet-class>controller.WorkAssignmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WorkAssigmentList</servlet-name>
+        <servlet-class>controller.WorkAssigmentList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlanCreationController</servlet-name>
+        <url-pattern>/productionplan/create</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlanDetailController</servlet-name>
+        <url-pattern>/productionplan/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WorkAssignmentController</servlet-name>
+        <url-pattern>/productionplan/workassignment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WorkAssigmentList</servlet-name>
+        <url-pattern>/productionplan/workassignment/list</url-pattern>
+    </servlet-mapping>
+</web-app>
